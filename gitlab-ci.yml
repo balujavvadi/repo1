@@ -1,0 +1,24 @@
+run-tests:
+ before_script:
+     -echo "prepare some test cases and get them"
+ script:
+     -echo "running some test commands."
+ after_script:
+
+     -echo "delete all test data"
+
+
+
+
+Build_images:
+  script:
+      -echo "building images from docker"
+      -echo "change the image tag,to upload ACR"
+
+
+
+
+push-images:
+   script:
+      -echo  "logging into my registry to ACR"
+      -echo  "push the image into ACR" 
